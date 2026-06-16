@@ -1,0 +1,204 @@
+/* CSS Reset Properties */
+body, main, article, section, header, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. Ensure the containers have a uniform height and hide any image overflow */
+.pure-g section.pure-u-1-4 {
+    height: 700px; /* Adjust this value to your preferred height */
+    overflow: hidden;
+    margin-top: 3em;
+}
+
+/* 2. Force the images to fill the container and crop if necessary */
+.pure-g section.pure-u-1-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio while filling the area */
+    /* display: block; */
+}
+
+.pure-g {
+    display: flex;
+    justify-content: center; /* This centers the items horizontally */
+}
+
+.pure-u-1-4 {
+  height: 700px;
+  overflow: hidden;
+  /* display: block; */
+  margin-inline: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* display: block; */
+}
+
+.pure-u-1-4 {
+  height: 700px;
+  overflow: hidden;
+  /* display: block; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* display: block; */
+}
+
+.pure-u-1-4 {
+  height: 700px;
+  overflow: hidden;
+  /* display: block; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* display: block; */
+}
+
+h2 {
+    text-align: left;
+    position: relative;
+    /* display: block; */
+    font-size: 60px;
+    margin-left: 75px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    text-align: left;
+    display: flex;
+    box-sizing: border-box;
+    font-size: 346.5px;
+    margin-top: -60px;
+    color:gold;
+    margin-bottom: 0px;
+    margin-left: 53px;
+    margin-right: auto;
+}
+
+.tp {
+    text-align: left;
+    position: relative;
+    /* display: block; */
+    font-size: 22px;
+    margin-inline: 97px;
+    margin-top: -30px;
+    
+}
+
+h3 {
+    text-align: left;
+    position: relative;
+    /* display: block; */
+    font-size: 20px;
+    margin-inline: 97px;
+    margin-top: 30px;
+
+}
+
+.grid-containers {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    gap: 30px;  
+}
+
+/* Update the widths to match the images */
+.grid-containers .lp, .grid-containers .mp, .grid-containers .rp {
+    background-color: lightblue;
+    width: 476px; /* Match the width of the images */
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+    display: block; /* Works better with margins in a grid */
+    column-height: 1000px;
+}
+
+/* Specifically for the left-most one if it needs to match the image's exact left offset */
+.grid-containers .lp {
+    margin-left: 78px; /* Adjust based on the image's exact position if 'auto' isn't perfect */
+    width: 474px;
+    margin-right: 67px;
+    padding-top: 2px;
+}
+
+.grid-containers .mp {
+    margin-left: 66px;
+}
+
+.grid-containers .rp {
+    width: 474px;
+    margin-right: 79px;
+}
+
+/* span {
+    font-size: 9em;
+    margin-top: 2em;
+} */
+
+.lp span {
+    float: left;            /* This makes the text wrap around the letter */
+    font-size: 15rem;        /* Adjust size as needed */
+    line-height: 0.8;       /* Pulls the text up closer to the top */
+    padding: 4px 4px 0 0; /* Creates a small gap between the letter and the text */
+    color: whitesmoke;
+}
+
+/* 1. Change the size and padding of the whole paragraph */
+.lp {
+    padding: 30px;
+    padding-inline: 10px;          /* Adds space inside the paragraph box */
+    font-size: 20px;        /* Changes the size of the rest of the text */
+    line-height: 1.4;       /* Improves readability around the big letter */
+    width: 450px;           /* You can change the 'width' here to resize the box */
+    box-sizing: border-box; /* Important: keeps padding inside the width */
+    margin-bottom: 0px;
+}
+
+.mp {
+    padding: 10px;          /* Adds space inside the paragraph box */
+    font-size: 20px;        /* Changes the size of the rest of the text */
+    line-height: 1.4;       /* Improves readability around the big letter */
+    width: 450px;           /* You can change the 'width' here to resize the box */
+    box-sizing: border-box; /* Important: keeps padding inside the width */
+    margin-bottom: 0px;
+
+}
+
+.rp {
+    padding: 10px;          /* Adds space inside the paragraph box */
+    font-size: 20px;        /* Changes the size of the rest of the text */
+    line-height: 1.4;       /* Improves readability around the big letter */
+    width: 450px;           /* You can change the 'width' here to resize the box */
+    box-sizing: border-box; /* Important: keeps padding inside the width */
+    margin-bottom: 0px;
+
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 0px;
+  color: black;
+  margin-inline: 3em;
+}
+
+.pages {
+  font-weight: bold;
+  opacity: 0.8;
+  margin-inline: 2em;
+}
+
