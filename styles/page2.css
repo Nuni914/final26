@@ -1,0 +1,171 @@
+header, main, article, section, h1, h2, p, footer {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+header {
+    padding: .8em;
+    text-align: right;
+    box-sizing: border-box;
+    height: 9em;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: .2em solid;
+    margin-inline: 5em;
+}
+
+h1 {
+    box-sizing: border-box;
+    font-display: block;
+    padding-inline: .21em;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 330px;
+    font-family: 'abril fatface regular';
+    font-weight: 100;
+    line-height: .74em;
+    height: 500px;
+}
+
+h2 {
+    box-sizing: border-box;
+    font-display: block;
+    padding-inline: .61em;
+    text-align: left;
+    font-size: 123px;
+    color: rgb(198, 68, 68);
+    font-family: 'tt travels next black' bold;
+    padding-top: 15px;
+}
+
+.extra-thick-text {       
+    font-weight: 900;
+}
+
+h3 {
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 37px;
+    padding-top: 1em;
+    padding-inline: 2.2em;
+
+}
+
+.author {
+    font-size: 30px;
+    color: rgb(198, 68, 68);
+    font-family: 'tt travels next' bold;
+}
+
+.word {
+    font-size:30px;
+    color: rgb(198, 68, 68);
+    font-family: 'tt travels next thin';
+}
+
+.pure-g {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 7em;
+    margin-inline: 5em;
+    /* margin-bottom: 5em;
+    padding-bottom: 3em; */
+    gap: 3.5em;
+    width: auto;
+    margin-right: 4.4em;
+}
+
+.name {
+    display: block;
+    text-align: left;
+    font-size: 25px;
+    margin-left: auto;
+    width: 100%;
+    font-family: 'tt travels next' bold;
+    font-weight: 900;
+}
+
+.place {
+    font-weight: 100;
+    font-family: 'tt travels next thin';
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+.name, .place {
+    margin-top: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    justify-content: space-between;
+    font-family: 'tt travels next medium';
+}
+
+.quote {
+    display: block;
+    margin-bottom: 0;
+    font-size: 95px;
+    color: rgb(198, 68, 68);
+}
+
+.mid {
+    display: flex;
+    width: auto;
+    text-align: left;
+    height: auto;
+    font-family: 'tt travels next medium';
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.right {
+    display: flex;
+    width: auto;
+    text-align: left;
+    height: auto;
+    font-family: 'tt travels next medium';
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 30px;
+}
+
+footer, footer p {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 0px;
+  color: black;
+  margin-inline: 3em;
+  font-size: 16px;
+}
+
+.pages {
+  font-weight: bold;
+  opacity: 0.8;
+  margin-inline: 2em;
+}
+
+footer p {
+    margin-right: .4em;
+}
+
+
+
+
+
+
+/* .stretched-text {
+    display: inline-block; /* Required for transforms to work on text */
+    /* transform: scaleX (1.5); Stretches the text to 160% width */
+    /* transform-origin: left; Optional: keeps the text aligned to the left */
+/* } */
