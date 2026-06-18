@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/*new css above and spelling of navbar below*/
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(85, 34, 34);
+}
+
+/* .page-title p {
+    font-size: 30px;
+    margin: 8px;
+    margin-bottom: 2px;
+} */
+
+.teddy {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.teddy ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(117, 3, 3);
+}
+
+.teddy li {
+    list-style: none;
+    margin: 2px;
+}
+
+.teddy a {
+    text-decoration: none;
+    color: rgb(76, 20, 20);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Charm', Regular;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.teddy a:hover {
+    background-color: lightgray;
+}
+
+/*begin mobile nav styles*/
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(90, 72, 72);
+    border-radius: 10px;
+}
+
+@media screen and (max-width:800px){
+/*spelling of navbar*/   
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .teddy {
+        display: none;
+        width: 100%;
+    }
+
+    .teddy ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .teddy ul li {
+        text-align: center;
+    }
+
+    .teddy ul li a {
+        padding: 8px 16px;
+    }
+/*the .active is not a :psuedo class*/
+    .teddy.active {
+        display: flex;
+    }
+
+    nav a {
+        border: 0px;
+    }
+}
+

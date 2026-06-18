@@ -5,9 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project - Page 3</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link href="styles/mobiles.css" rel="stylesheet" type="text/css">
     <link href="../styles/page3.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div id="nav-placeholder"></div>
+    <script>
+
+    fetch('navbar.html')
+
+    .then(response => response.text())
+
+    .then(data => {
+
+    document.getElementById('nav-placeholder').innerHTML = data;
+
+    // Wait until nav.html is loaded, THEN attach toggle behavior
+
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+
+    const navbarLinks = document.getElementsByClassName('teddy')[0];
+
+    if (toggleButton && navbarLinks) {
+
+    toggleButton.addEventListener('click', () => {
+
+    navbarLinks.classList.toggle('active');
+
+    });
+
+    }
+
+    });
+
+    </script>
     <header>
         <img src="../images/home.jpg" alt="signs about love for home">
     </header>

@@ -1,0 +1,32 @@
+main, body, section {
+    margin: 0px;
+    padding: 0px;
+}
+
+main, body {
+    background-color: lightskyblue;
+}
+
+main section {
+    display: grid;
+    justify-content: flex-start;
+    padding-bottom: 5em;
+}
+
+.image-container {
+    padding-inline: 30px;
+    margin-inline: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+section.pure-u-1 {
+  width: 100%;       /* Ensure it takes the full width of the parent or a specific smaller width */
+  max-width: 1000px; /* Optional: limit the width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}

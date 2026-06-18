@@ -8,9 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="styles/mobiles.css" rel="stylesheet" type="text/css">
     <link href="../styles/page2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div id="nav-placeholder"></div>
+    <script>
+
+    fetch('navbar.html')
+
+    .then(response => response.text())
+
+    .then(data => {
+
+    document.getElementById('nav-placeholder').innerHTML = data;
+
+    // Wait until nav.html is loaded, THEN attach toggle behavior
+
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+
+    const navbarLinks = document.getElementsByClassName('teddy')[0];
+
+    if (toggleButton && navbarLinks) {
+
+    toggleButton.addEventListener('click', () => {
+
+    navbarLinks.classList.toggle('active');
+
+    });
+
+    }
+
+    });
+
+    </script>
     <header>
         <p>GRAPH130 | FINAL PROJECT | SPRING 2026</p>
     </header>
