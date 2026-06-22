@@ -95,3 +95,39 @@ footer p {
 footer p:first-child {
     margin-left: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .pure-g {
+  display: flex;
+  flex-flow: wrap;
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+}
+
+.pure-u-1 {
+  display: inline-block;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+.pure-u-1 {
+  display: inline-block;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+.pure-u-1 {
+  display: inline-block;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+}

@@ -1,6 +1,10 @@
-main, body, section {
+main, body, section, header {
     margin: 0px;
     padding: 0px;
+}
+
+header{
+    height: auto;
 }
 
 main, body {
@@ -11,6 +15,7 @@ main section {
     display: grid;
     justify-content: flex-start;
     padding-bottom: 5em;
+    padding-top: 5em;
 }
 
 .image-container {
